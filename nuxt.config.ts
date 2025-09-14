@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
-  css: ['vuetify/styles', '@/assets/styles/main.scss'],
+  css: ['@/assets/styles/main.scss'],
   plugins: ['~/plugins/vuetify.ts', '~/plugins/pinia-persist.client.ts'],
   typescript: {
     strict: true,

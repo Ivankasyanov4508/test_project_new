@@ -1,9 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  modules: ['@pinia/nuxt'],
+  build: {
+    transpile: ['vuetify'],
+  },
+  css: ['vuetify/styles', '@/assets/styles/main.scss'],
+  plugins: ['~/plugins/vuetify.ts', '~/plugins/pinia-persist.client.ts'],
   typescript: {
-    typeCheck: true,
     strict: true,
+    typeCheck: true,
   },
 })

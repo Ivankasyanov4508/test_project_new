@@ -1,12 +1,18 @@
 import { createVuetify } from 'vuetify'
+import 'vuetify/styles'
+// import { aliases, mdi } from 'vuetify/lib/iconsets/mdi'
+import '@mdi/font/css/materialdesignicons.css'
+import * as components from 'vuetify/components'
+import * as labsComponents from 'vuetify/labs/components'
 
-export default defineNuxtPlugin((app) => {
+export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     ssr: true,
-    theme: {
-      defaultTheme: 'light'
-    }
+    components: {
+      ...components,
+      ...labsComponents,
+    },
   })
 
-  app.vueApp.use(vuetify)
+  nuxtApp.vueApp.use(vuetify)
 })

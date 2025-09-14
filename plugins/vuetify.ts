@@ -21,10 +21,10 @@ export default defineNuxtPlugin((nuxtApp) => {
     },
     defaults: {
       global: {
-        ripple: false, 
+        ripple: false,
       },
     },
-    directives: {}, 
+    directives: {},
   })
 
   nuxtApp.vueApp.use(vuetify)

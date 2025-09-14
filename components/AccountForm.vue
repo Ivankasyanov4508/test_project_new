@@ -12,12 +12,12 @@
     </div>
 
     <v-alert type="info" variant="tonal" class="hint-alert" prepend-icon="mdi-help-circle">
-      Для указания нескольких тегов для одной пары логин/пароль используйте разделитель ;
+      Для указания нескольких меток для одной пары логин/пароль используйте разделитель ;
     </v-alert>
 
     <div class="accounts-table">
       <div class="table-header">
-        <div class="header-cell">Теги</div>
+        <div class="header-cell">Метки</div>
         <div class="header-cell">Тип записи</div>
         <div class="header-cell">Логин</div>
         <div class="header-cell">Пароль</div>
